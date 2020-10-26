@@ -1,6 +1,6 @@
 #!/bin/sh
 
-certificateLookup=$(security find-certificate -a Gallagher)
+certificateLookup=$(security find-certificate -c Gallagher)
 
 if [[ ! $certificateLookup ]]
 then
